@@ -1,0 +1,227 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Casino</title>
+        <!-- <link rel="stylesheet" href="style.css"> -->
+        <!-- <script defer src="script.js"></script> -->
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+        <style>
+            body{
+    margin:0px;
+    font-family: montserrat,sans-serif !important;
+}
+.single-match {
+    max-height: 300px;
+    height: 100%;
+}
+.match-box {
+    padding-left: 50px;
+    padding-right: 50px;
+}
+            .contest-league {
+    display:flex;
+    justify-content: space-between;
+}
+
+.match-alltext {
+    
+    align-content: center;
+    color:white;
+    text-decoration:none;
+    padding: 50px;
+    font-size: 20px;
+    font-weight: 600;
+}
+.matches-detail{
+    position: relative;
+}
+.match-scores {
+    position:absolute;
+    display:flex;
+    justify-content: space-between;
+    left: 45%;
+}
+
+.match-teams {
+    display:flex;
+    justify-content: space-between;
+}
+
+.league-background-image{
+    position: relative;
+}
+
+.league-background-image img{
+    position:absolute;
+    z-index:-1;
+    width:100%;
+    max-height: 250px;
+    border-radius: 50px !important;
+}
+
+.match-alltext {
+    display:flex;
+    flex-direction:column;
+    gap:20px;
+    justify-content: center;
+}
+
+.team-left {
+    display:flex;
+    flex-direction:column;
+    gap:20px;
+}
+
+.team-right {
+    display:flex;
+    flex-direction:column;
+    gap:20px;
+}
+        </style>
+    </head>
+    <body>
+        <header>Header Space</header>
+        <main>
+            <section class="top-match-blocks">
+                <div class="single-match">
+                <a href="./sportsbook-lobby"> 
+                    <div class="match-box">
+                        <div class="league-background-image">
+                            <img src="https://api-g-c7818b61-607.sptpub.com/api/v1/promo/banner/brand/2402912577089839104/image/2512594806098767873">
+                        </div>
+                        <div class="match-alltext">
+                            <div class="contest-league">
+                                <div class="match-league-name">
+                                        <div class="match-league-name-div">
+                                            <span class="match-league-name-span">India > Indian Premier League</span>
+                                        </div>
+                                </div>
+                                <div class="match-status">
+                                    <div class="match-status-div">1 INN, 18.4 OV</div>
+                                </div>
+                            </div>
+                            <div class="matches-detail">
+                                <div class="match-scores">
+                                    <div class="match-left-team-score">265/4</div>
+                                    <div class="match-right-team-score">0/0</div>
+                                </div>
+                                <div class="match-teams">
+                                    <div class="team-left">
+                                        <div class="team-logo">
+                                            <div class="team-logo-div" style="width: 32px; height: 32px;">
+                                                <img src="https://d1bvoel1nv172p.cloudfront.net/competitors/images/normal/medium/152316.png" alt="" height="32" width="32" class="team-logo-image">
+                                            </div>
+                                        </div>
+                                        <div class="team-name">Sunrisers Hyderabad</div>
+                                    </div>
+                                    <div class="team-right">
+                                        <div class="team-logo">
+                                            <div class="team-logo-div" style="width: 32px; height: 32px;">
+                                                <img src="https://d1bvoel1nv172p.cloudfront.net/competitors/images/normal/medium/152320.png" alt="" height="32" width="32" class="team-logo-image">
+                                            </div>
+                                        </div>
+                                        <div class="team-name">Rajastan Royals</div>
+                                    </div>
+                                </div>
+                            </div> 
+                        </div>       
+                    </div>
+                </a>
+                </div>
+                <div class="single-match">
+                    <a href="./sportsbook-lobby"> 
+                        <div class="match-box">
+                            <div class="league-background-image">
+                                <img src="https://api-g-c7818b61-607.sptpub.com/api/v1/promo/banner/brand/2402912577089839104/image/2512594806098767873">
+                            </div>
+                            <div class="match-alltext">
+                                <div class="contest-league">
+                                    <div class="match-league-name">
+                                            <div class="match-league-name-div">
+                                                <span class="match-league-name-span">India > Indian Premier League</span>
+                                            </div>
+                                    </div>
+                                    <div class="match-status">
+                                        <div class="match-status-div">1 INN, 18.4 OV</div>
+                                    </div>
+                                </div>
+                                <div class="matches-detail">
+                                    <div class="match-scores">
+                                        <div class="match-left-team-score">265/4</div>
+                                        <div class="match-right-team-score">0/0</div>
+                                    </div>
+                                    <div class="match-teams">
+                                        <div class="team-left">
+                                            <div class="team-logo">
+                                                <div class="team-logo-div" style="width: 32px; height: 32px;">
+                                                    <img src="https://d1bvoel1nv172p.cloudfront.net/competitors/images/normal/medium/152316.png" alt="" height="32" width="32" class="team-logo-image">
+                                                </div>
+                                            </div>
+                                            <div class="team-name">Sunrisers Hyderabad</div>
+                                        </div>
+                                        <div class="team-right">
+                                            <div class="team-logo">
+                                                <div class="team-logo-div" style="width: 32px; height: 32px;">
+                                                    <img src="https://d1bvoel1nv172p.cloudfront.net/competitors/images/normal/medium/152320.png" alt="" height="32" width="32" class="team-logo-image">
+                                                </div>
+                                            </div>
+                                            <div class="team-name">Rajastan Royals</div>
+                                        </div>
+                                    </div>
+                                </div> 
+                            </div>       
+                        </div>
+                    </a>
+                    </div>
+                    <div class="single-match">
+                        <a href="./sportsbook-lobby"> 
+                            <div class="match-box">
+                                <div class="league-background-image">
+                                    <img src="https://api-g-c7818b61-607.sptpub.com/api/v1/promo/banner/brand/2402912577089839104/image/2512594806098767873">
+                                </div>
+                                <div class="match-alltext">
+                                    <div class="contest-league">
+                                        <div class="match-league-name">
+                                                <div class="match-league-name-div">
+                                                    <span class="match-league-name-span">India > Indian Premier League</span>
+                                                </div>
+                                        </div>
+                                        <div class="match-status">
+                                            <div class="match-status-div">1 INN, 18.4 OV</div>
+                                        </div>
+                                    </div>
+                                    <div class="matches-detail">
+                                        <div class="match-scores">
+                                            <div class="match-left-team-score">265/4</div>
+                                            <div class="match-right-team-score">0/0</div>
+                                        </div>
+                                        <div class="match-teams">
+                                            <div class="team-left">
+                                                <div class="team-logo">
+                                                    <div class="team-logo-div" style="width: 32px; height: 32px;">
+                                                        <img src="https://d1bvoel1nv172p.cloudfront.net/competitors/images/normal/medium/152316.png" alt="" height="32" width="32" class="team-logo-image">
+                                                    </div>
+                                                </div>
+                                                <div class="team-name">Sunrisers Hyderabad</div>
+                                            </div>
+                                            <div class="team-right">
+                                                <div class="team-logo">
+                                                    <div class="team-logo-div" style="width: 32px; height: 32px;">
+                                                        <img src="https://d1bvoel1nv172p.cloudfront.net/competitors/images/normal/medium/152320.png" alt="" height="32" width="32" class="team-logo-image">
+                                                    </div>
+                                                </div>
+                                                <div class="team-name">Rajastan Royals</div>
+                                            </div>
+                                        </div>
+                                    </div> 
+                                </div>       
+                            </div>
+                        </a>
+                        </div>
+            </section>
+        </main>
+        <footer></footer>
+    </body>
+</html>

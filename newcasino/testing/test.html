@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cricket Fever</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-image: url('https://source.unsplash.com/1920x1080/?cricket,stadium');
+            background-size: cover;
+            background-position: center;
+            color: white;
+        }
+        .glass {
+            background: rgba(0, 0, 0, 0.6);
+            backdrop-filter: blur(8px);
+        }
+        .button {
+            transition: transform 0.3s ease;
+        }
+        .button:hover {
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body class="min-h-screen flex flex-col items-center justify-center">
+    <header class="w-full bg-black bg-opacity-50 py-4">
+        <nav class="max-w-7xl mx-auto flex justify-between items-center px-6">
+            <h1 class="text-3xl font-bold text-green-400">Cricket Fever</h1>
+            <ul class="flex space-x-6">
+                <li><a href="#" class="text-white hover:text-green-400">Home</a></li>
+                <li><a href="#matches" class="text-white hover:text-green-400">Matches</a></li>
+                <li><a href="#teams" class="text-white hover:text-green-400">Teams</a></li>
+                <li><a href="#stats" class="text-white hover:text-green-400">Stats</a></li>
+                <li><a href="#contact" class="text-white hover:text-green-400">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="flex-1 flex flex-col items-center justify-center text-center px-4">
+        <div class="glass p-8 rounded-2xl shadow-lg max-w-xl">
+            <h2 class="text-4xl font-bold mb-4">Welcome to Cricket Fever!</h2>
+            <p class="mb-6">Stay updated with live matches, player stats, and the latest news in the cricketing world. Never miss a moment!</p>
+            <a href="#matches" class="button bg-green-400 text-black font-bold py-3 px-6 rounded-lg hover:bg-green-500">Explore Matches</a>
+        </div>
+    </main>
+
+    <footer class="w-full bg-black bg-opacity-50 py-6 mt-10">
+        <div class="max-w-7xl mx-auto text-center text-sm">
+            <p>&copy; 2025 Cricket Fever. All rights reserved.</p>
+            <p>Terms & Conditions | Privacy Policy</p>
+        </div>
+    </footer>
+
+    <script>
+        // JavaScript for interactivity
+        document.querySelectorAll('a').forEach(link => {
+            link.addEventListener('mouseover', () => {
+                link.style.textShadow = '0 0 10px rgba(0, 255, 0, 0.8)';
+            });
+            link.addEventListener('mouseout', () => {
+                link.style.textShadow = 'none';
+            });
+        });
+    </script>
+</body>
+</html>
